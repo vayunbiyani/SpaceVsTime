@@ -169,11 +169,11 @@ Let’s run this simple snippet to see how doing the same calculation with const
 ```python
 import time
 
-x = 10
 sum = 0
 
 tStart=time.time()
 for i in range(10000000):
+    x = 10
     sum+=x#has to access x from the memory each tim
 tEnd=time.time()
 
