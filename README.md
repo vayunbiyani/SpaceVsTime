@@ -187,7 +187,7 @@ tEnd=time.time()
 
 runTime2=tEnd-tStart
 
-print("Avoiding variables in a simple calculation cuts down the time by",1-(runTime2/runTime1),"percent")
+print("Avoiding variables in a simple calculation cuts down the time by",(1-(runTime2/runTime1))*100,"percent")
 ```
 
 We do notice that avoiding the use of variables does indeed make the program faster. This is a fairly simple calculation for proof of concept but the increase in performance in larger apps with databases would be much higher in them.
